@@ -3,6 +3,7 @@ const express = require('express');
 const app = express();
 const url = require('url');
 const { ApolloServer, gql } = require('apollo-server-express');
+const StandingsService = require("./standings");
 
 // Construct a schema, using GraphQL schema language
 const typeDefs = gql`
@@ -14,7 +15,10 @@ const typeDefs = gql`
 // Provide resolver functions for your schema fields
 const resolvers = {
   Query: {
-    standings: () => 'League Standings',
+    async standings() {
+      const standings = await StandingsService.list();
+      return standings;
+    },
   },
 };
 
