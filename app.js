@@ -1,10 +1,8 @@
 require('dotenv').config();
 const express = require('express');
 const app = express();
-const url = require('url');
 const { ApolloServer, gql } = require('apollo-server-express');
 const StandingsService = require("./standings");
-const fetch = require('node-fetch');
 const axios = require('axios');
 
 const uri = process.env.API_EXTERNAL_URI;
