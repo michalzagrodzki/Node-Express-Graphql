@@ -24,6 +24,7 @@ After you cloning repo to your local machine, go to its root directory and run `
 After that, run `npm dev` to start the server. 
 
 You can access the REST API server in browser through: http://localhost:5050/
+
 You can access the Graphql server in browser through: http://localhost:5050/graphql
 
 
