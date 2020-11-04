@@ -5,7 +5,7 @@ This is a node.js server application powered by Express that gives main features
 
 ## Features
 - REST API endpoint
-- Graphql API endpoint
+- GraphQL API endpoint
 - works in browser
 - works with clientside applications
 
@@ -19,13 +19,13 @@ Create .env file based on .env-sample and fill all environment variables.
 ---
 
 ## Usage
-After you cloning repo to your local machine, go to its root directory and run `npm install` to install its dependencies.
+After cloning the repo to your local machine, go to its root directory and run `npm install` to install its dependencies.
 
-After that, run `npm dev` to start the server. 
+After that, run `npm dev` to start the server.
 
 You can access the REST API server in browser through: http://localhost:5050/
 
-You can access the Graphql server in browser through: http://localhost:5050/graphql
+You can access the GraphQL server in browser through: http://localhost:5050/graphql
 
 
 ---
